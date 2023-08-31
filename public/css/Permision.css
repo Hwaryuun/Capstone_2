@@ -1,0 +1,277 @@
+.main {
+    position: absolute;
+    top: 60px;
+    width: calc(100% - 280px);
+    min-height: calc(100vh - 60px);
+    left: 280px;
+    background: #f5f5f5
+}
+
+
+.M-table{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    width: 100%;
+    padding: 20px;
+
+}
+.For-S{  
+  height: 20px;
+  width: 100%;
+  accent-color: rgb(104, 202, 255)
+} 
+.For-S:hover{ 
+  accent-color: rgb(255, 255, 255)
+}
+
+.slas{
+  display: inline-flex;
+ 
+  background-color: #0298cf;
+  margin: 5px;
+  padding: 5px 20px;
+  color: white;
+  border-radius: 50px;
+}
+
+
+.Table-1,.Table-2,.Table-3{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    width: 100%;
+}
+
+.Cnt2{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 15px;
+}
+
+
+/* Table*/
+
+
+
+  .Table-con{
+    padding: 15px 0 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    margin-bottom: 10px;
+  }
+
+  .ORP{
+    font-size: 30px;
+    color: #006f98;
+  }
+ .ORPS{
+    color: #6d6d6d;
+  }
+
+
+
+  .For-S{  
+    height: 20px;
+    width: 100%;
+    accent-color: rgb(104, 202, 255)
+  } 
+  .For-S:hover{ 
+    accent-color: rgb(255, 255, 255)
+  }
+
+/*----------------*/
+
+
+
+
+.Add-P{
+  background: #1683aa;
+  color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 2px #1683aa solid;
+  border-radius: 4px;
+  padding: 1em;
+  cursor: pointer;
+  height: 43px;
+  font-size: 16px;
+
+}
+.Add-P i {
+margin-right: 10px;
+}
+.Add-P:hover{
+  background: #1fa2d2;
+  border: 2px #1fa2d2 solid;
+}
+.Save{
+    background: #16aa6f;
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px #16aa6f solid;
+    border-radius: 4px;
+    padding: 1em;
+    min-width: 8em;
+    cursor: pointer;
+}
+.Save:hover{
+    background: #1fd285;
+    border: 2px #1fd285 solid;
+}
+
+
+
+/*modal-----------------------------------------------*/
+  .modal {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(77, 77, 77, .7);
+    transition: all .4s;
+    z-index: 1; 
+
+  }
+  
+  .modal:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .modal__content {
+    border-radius: 5px;
+    position:  relative; 
+    min-width: 470px;
+    width: 25%;
+    background: #fff;
+    padding: 5em 1em 0;
+    bottom: 240px;
+    box-shadow: 1px 2px 3px 2px rgba(0, 0, 0, 0.162);
+
+  }
+  
+  .modal__close {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 50px;
+  }
+
+
+    .M-TITTL{
+        font-size: 20px;
+        font-weight: 600;
+        margin: 17px 25px;
+        color: rgb(231, 231, 231);
+    }
+
+.Top-Form{
+
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background-color: #3a5782;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 55px;     
+}
+
+/*modal-----------------------------------------------*/
+/*modal*/
+
+.field label{
+    font-size: 14px;
+    font-weight: 500;
+    color: #6d6d6d;
+}
+.field input{
+    outline: none;
+    font-size: 14px;
+    color: #333;
+    font-weight: 400;
+    border-radius: 4px;
+    height: 38px;
+    margin: 8px 0;
+    padding: 0 15px;
+    border: 1px solid #aaa;
+    width: 100%;
+
+}
+.field{
+    padding: 12px;
+}
+ ::placeholder{
+     opacity: 0.50;
+ }
+ .BUTNS-AD{
+    padding: 30px 12 35px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+ }
+ 
+ .Add-ITM,  .Add-ITM-C{
+  background: rgb(79, 230, 147);
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 13px;
+  cursor: pointer;
+  font-size: 16px;
+  height: 40px;
+}
+.Add-ITM-C{
+  background: #f97777;
+}
+.Add-ITM span,  .Add-ITM-C span{
+   margin-left: 20px;
+}
+ /*modal*/
+
+ @media (max-width:880px) {
+  .cards {
+      width: 100%;
+      padding: 35px 20px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
+  }
+  .M-table{
+      grid-template-columns: 1fr;
+      overflow: hidden;
+  }
+
+}
+
+@media (max-width: 780px) {
+
+.cards {
+    grid-template-columns: 1fr;
+}
+.ORP{
+  font-size: 16px;
+}
+.ORPS, .DY{
+  font-size: 11px;
+}
+
+}

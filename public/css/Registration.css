@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceland&family=Orbitron:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@1,800&family=Iceland&family=Orbitron:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Iceland', cursive;
+}
+.asterisk{
+	color: red;
+    font-size: 18px;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background: url("/images/Asset_img/shatter.png"); /*bg*/  
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#logo{
+    right: 30px;
+    top: -40px;
+    width: 110px;
+    position: absolute;
+    border-radius: 50%;
+    background:white;
+    border: 3px solid white;
+    filter: grayscale(10%) hue-rotate(140deg);
+}
+
+#Container{
+    max-width: 1000px;
+    position: relative;
+    width: 100%;
+    border-radius: 6px;
+    padding: 40px;
+    margin: 0 15px;
+    background-color: white;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.201);
+    margin-top: 55px;
+    margin-bottom: 55px;
+}
+
+#Container H5{
+    text-transform: uppercase;
+    font-size: 27px;
+    font-weight: 600;
+    margin: 15px 30px;
+    color: rgb(255, 255, 255);
+}
+
+#Container #Top-Form{
+
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;;
+    background-image: linear-gradient(to right, #ad4e00, #ffae19);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0px;
+    height: 55px;
+      
+  }
+
+
+#Container #Form{
+    position: relative;
+    min-height: 490px;
+    margin-top: 70px;
+
+    
+}
+
+
+#Container #Form #Details{
+    margin-top: 45px;
+}
+
+#Container #Form #Address-Details,
+#Container #Form #Contact-Details, 
+#Container #Form #Student-Details, 
+#Container #Form #Emergency-Details{
+    margin-top: 27px;
+}
+
+
+
+#Container #Form #Name{
+    display: block;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 18px 0;
+    color: #555;
+}
+
+#Container #Form #First-Fields, #First-Fields-c,#Button-Fields{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#Form #First-Fields .field, .field-2{
+    display: flex;
+    flex-direction: column;
+    width: calc(100% / 3 - 15px);
+    margin: 4px 0;
+}
+#Form #First-Fields-c .field, .field-2{
+    display: flex;
+    flex-direction: column;
+    width: calc(100% / 2 - 15px);
+    margin: 4px 0;
+}
+
+#Form #First-Fields .field-2{
+    width: calc(100% / 5 - 15px);
+}
+
+.field label,.field-2 label{
+    font-size: 16px;
+    font-weight: 500;
+    color: #555;
+}
+.field input,.field-2 input{
+    outline: none;
+    font-size: 15px;
+    color: #555;
+    font-weight: 400;
+    border-radius: 5px;
+    height: 38px;
+    margin: 8px 0;
+    padding: 0 15px;
+    border: 1px solid #aaa;
+}
+.field input:is(:focus, :valid),.field-2 input:is(:focus, :valid){
+    box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+}
+.field input[type="date"]{
+   color: #707070;
+}
+.field input[type="date"]:valid{
+    color: #333;
+ }
+
+ ::placeholder{
+     opacity: 0.50;
+ }
+ 
+ #Container #Form button,  #BUT{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    max-width: 300px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-image: linear-gradient(to right, #af6000, #ffae19, #af6000);
+    color: white;
+    margin: 45px 0 10px 0;
+    border-radius: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .5s;
+    font-size: 1rem;
+	background-size: 200%;
+ }
+
+ #Container #Form button:hover, #BUT:hover{
+    background-position: right;
+ }
+
+ button i{
+     margin-left: 20px;
+     margin-top: 1px;
+     font-size: 17px;
+ }
+ #BUT i{
+    margin-left: 15px;
+    margin-top: 1px;
+    font-size: 17px;
+ }
+ #BUT{
+   
+    max-width: 200px;
+	background-image: linear-gradient(to right, #003576, #20b1ff, #003576);
+    color: white;
+    text-decoration: none;
+
+
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+
+::-webkit-scrollbar-track {
+    background: transparent !important;
+  }
+  
+::-webkit-scrollbar-thumb {
+    background: #a5a5a5;
+    border-radius: 10px;
+}
+
+
+ @media(max-width: 1000px){  
+
+    #Container #Form button{
+        width: 48%;
+    }
+
+ }
+@media(max-width: 750px){
+    #Container #Form{
+        overflow-y:scroll;
+    }
+    #Container #Form::-webkit-scrollbar{
+        display: none;
+    }
+    
+    #Form #First-Fields .field-2,   #Form #First-Fields .field{
+        width: calc(100% / 2 - 15px );
+    }
+
+    #Container{
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    #Container #Form #Button-Fields{
+       width: 100%;
+    }
+    #Container #Form button{
+        max-width: 243px;
+        width: 100%;
+    }
+
+    #logo{
+        right: 20px;
+        top: -30px;
+        width: 90px;
+        position: absolute;
+    }
+}
+
+
+@media(max-width: 550px){   
+    #Form #First-Fields .field-2,   #Form #First-Fields .field{
+        width: 100%
+    }
+    #Container{
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    #Container #Form button, #Button-Fields{
+        width: 49%;
+    }
+
+    #logo{
+        right: 10px;
+        top: -30px;
+        width: 80px;
+    }
+}
+@media(max-width: 450px){   
+    #Form #First-Fields-c .field, .field-2{
+        width: 100%;
+    }
+    #Container #Form button,#BUT{
+        max-width: 400px;
+        width: 100%;
+    }
+    #Container{
+        padding: 20px;
+    }
+
+}
+
+@media(max-width: 400px){   
+  
+    #logo{
+        right: 10px;
+        top: -30px;
+        width: 70px;
+    }
+
+    #Container #Form #Button-Fields{
+        display: block;
+        
+    }
+    #Container #Form button{
+        max-width: 300px;
+        width: 100%;
+    }
+
+    #BUT{
+        max-width: 300px;
+    }
+
+    
+   
+
+}
+
+@media(max-width: 350px){   
+    #logo{
+        right: 10px;
+        top: -20px;
+        width: 55px;
+    }
+
+}

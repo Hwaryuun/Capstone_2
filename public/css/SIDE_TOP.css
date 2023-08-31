@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceland&family=Orbitron:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@1,800&family=Iceland&family=Orbitron:wght@500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Iceland', cursive;
+   
+}
+
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+:root{
+    --blue:#394c68;
+ 
+}
+
+.sibewibe{
+    background-color: #0298cf;
+    padding: 10px 0;
+    color: white;
+    border-radius: 20px;
+}
+/*sidebar*/
+
+.Side-NAV{
+
+    width: 280px;
+    height: 100%;
+    background: var(--blue);
+    overflow-y: auto;
+    position: fixed;
+ 
+}
+
+hr{
+    margin: 20px 20px 20px 20px;
+    border: none;
+    height: 1px;
+    background-color: #eaeaea8f;
+
+}
+
+
+ .dd_menu {
+    position: absolute;
+    top: 55px;
+    right: -15px;
+    display: flex;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.25);
+    display: none;
+    transition: .3s ease;
+
+}
+
+.dd_menu .dd_left{
+	background: #5e86c1;
+	padding: 15px 20px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+ .dd_menu .dd_left li{
+	color: #fff;
+    /* padding: 10px 10px; */
+}
+
+/* .dd_menu .dd_right li{
+  padding: 10px 10px;
+} */
+.dd_menu .dd_right{
+	padding: 15px 20px;
+}
+
+.dd_menu li{
+	
+	color: #868686;
+}
+.dd_menu .dd_right{
+	padding: 15px 20px;
+}
+
+.dd_menu .dd_right ul li a{
+
+    color: #394c68;
+    padding: 10 15 10 15;
+    text-decoration: none;
+}
+
+.dd_menu:before{
+	content: "";
+	position: absolute;
+	top: -20px;
+	right: 27px;
+
+	border: 10px solid;
+	border-color: transparent transparent #fff transparent;
+}
+
+.dd_main.actives .dd_menu{
+	display: flex;
+
+}
+
+
+
+.Menu{
+    margin-top: 80px;
+}
+
+.collapse{
+    border-left: 3px solid rgb(255, 255, 255);
+    background: rgba(123, 143, 221, 0.3);
+}
+.active{
+    border-left: 3px solid rgb(255, 255, 255);
+    background: rgba(123, 143, 221, 0.3);
+}
+
+
+.Menu li a{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    transition: .3s ease;
+    color: #fff;
+    padding: 22px 0;
+    font-size: 16px;
+    font-weight: 500;
+    border-left: 3px solid transparent;
+    
+}
+.Menu li a:hover{
+    background: rgba(224, 224, 224, 0.3);
+    /* border-left-color: rgb(255, 255, 255); */
+}
+
+
+.Menu li a .Icon{
+    min-width: 60px;
+    text-align: center;
+    font-size: 18px;
+}
+.Menu li a .Arrow{
+    margin-left: auto;
+    margin-right: 16px;
+}
+.Out{
+    margin-top: 50px;
+    background: #4a6285;
+}
+
+.submenu-Account,
+.submenu-Order,
+.submenu-Items,
+.submenu-Inventory,
+.submenu-Transactions,
+.submenu-SPC,
+.submenu-FT
+{
+    max-height: 0;
+    overflow-y: hidden;
+    transition: .3 ease;
+    background: rgba(225, 225, 225, .1);
+}
+
+.submenu-Account li a,
+.submenu-Order li a,
+.submenu-Items li a,
+.submenu-Inventory li a,
+.submenu-Transactions li a,
+.submenu-SPC li a,
+.submenu-FT li a{
+    padding-left: 24px;
+}
+
+.submenu-Account.Show,
+.submenu-Order.Show,
+.submenu-Items.Show,
+.submenu-Inventory.Show,
+.submenu-Transactions.Show,
+.submenu-FT.Show{
+    max-height: 700px;
+}
+
+
+
+.submenu-PT,
+.submenu-PRSC,
+.submenu-QT{
+    max-height: 0;
+    overflow-y: hidden;
+    transition: .3 ease;
+    background: rgba(225, 225, 225, .1);
+}
+
+
+.submenu-PT li a,
+.submenu-PRSC li a,
+.submenu-QT li a{
+    padding-left: 60px;
+}
+
+
+.submenu-PT.Show,
+.submenu-SPC.Show,
+.submenu-PRSC.Show,
+.submenu-QT.Show{
+    max-height: 500px;
+}
+
+.DY {
+    color: #6d6d6d;
+}
+
+
+/*top*/
+.TOP-NAV {
+    position: fixed;
+    background-color: #5e86c1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);
+    width: 100%;
+    padding: 0 20px;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end; /*flexend or spacebeet*/
+    align-items: center;
+    z-index: 3;
+    
+}
+::placeholder{
+    opacity: .5;
+}
+
+.logo{
+    left: 95px;
+    width: 300px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    left: -65px;
+    width: 50px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+
+}
+.Navigation{
+    left: 360px;
+    width: 300px;
+    position: absolute;
+}
+.logo h3 {
+    font-size: 35px;
+    color: #f0f0f0;
+    /* text-shadow: 2px 2px rgb(71, 71, 71); */
+}
+.Navigation h2{
+    color: #f0f0f0;
+}
+.search {
+    position: relative;
+    width: 30%;
+    right: 260px;
+}
+
+.search input {
+    width: 100%;
+    min-width: 128px;
+    height: 35px;
+    padding: 0 30px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: #f5f5f5;
+}
+
+.search i {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.Notification{
+    color: #f0f0f0;
+    right: 180px;
+    width: 45px;
+    position: absolute;
+    padding: 15px;
+
+}
+.tablexxx{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-gap: 10px;
+    width: 100%;
+    padding: 20px;
+
+
+
+}
+.dd_main {
+    color: #f0f0f0;
+    right: 30px;
+    width: 200spx;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+
+    cursor: pointer;
+}
+.upcommingurdirs{
+    /* margin: 20px;
+    width: 50%; */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 7px 25px rgb(0 0 0 / 8%);
+}
+.slayers{
+    background-color: rgb(13, 201, 0);
+    color: white;
+    padding: 7px 20px;
+    text-align: center  ;
+  
+    border-radius: 50px;
+  
+}
+.SAIBASA{
+    padding: 200px 20px;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.SAIBASA .ORP{
+    font-size: 50px;
+}
+.SAIBASA .DY{
+    margin-top: 20px;
+}
+
+.Name{
+    margin-right: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; 
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent !important;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #bbbbbb;
+    border-radius: 10px;
+  }
+
+
+@media (max-width:1115px) {
+
+
+    .main {
+        width: calc(100% - 60px);
+        left: 60px;
+        
+    }
+    hr{
+        margin: 20 0 20 0;
+    }
+}
+
+@media (max-width:1100px) {
+    
+    .logo{
+        visibility: hidden;
+    
+    }
+    .Navigation{
+        left: 20px;
+    }
+    .submenu-Account li a,
+    .submenu-Items li a,
+    .submenu-Inventory li a,
+    .submenu-Transactions li a,
+    .submenu-FT li a{
+    padding-left: 0;
+    }
+    .search{
+        right: 220px;
+     }
+
+     .tablexxx{
+            grid-template-columns: 1fr;
+     }
+  
+  
+}
+
+@media (max-width:500px) {
+    .TOP-NAV {
+        grid-template-columns: 1fr 5fr 0.4fr 1fr;
+    }
+    .search{
+       visibility: hidden;
+    }
+}
+ 
